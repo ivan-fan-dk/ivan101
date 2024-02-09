@@ -1,11 +1,8 @@
 # Math notes 
 Copyright 2024 Ivan Fan, All rights reserved.
 
-> [!IMPORTANT]
-> BIG CHANGE: html_theme has changed to [sphinx_book_theme](https://sphinx-book-theme.readthedocs.io/en/stable/index.html). You may also be interested in taking a look at [MyST-NB](https://myst-nb.readthedocs.io/en/latest/index.html) and [sphinx-togglebutton](https://sphinx-togglebutton.readthedocs.io/en/latest/index.html).
-
-> [!NOTE]
-> It is a good practice to run `git pull` to make sure that the working directory is up to date before working.
+> [!NOTE] A note for my own
+> It is a good practice to run `git pull` or `git fetch` to make sure that the working directory is up to date before working.
 
 ## How to get started
 
@@ -15,13 +12,9 @@ Copyright 2024 Ivan Fan, All rights reserved.
 - Request access to this repository.
 - Install **GitHub Codespaces** extension on vscode.
 - Connect to this repository using **Remote Explorer** on the left side bar of vscode.
-- Activate virtual environment.
+- Run the following to activate virtual environment.
 ```bash
 source bin/activate
-```
-- Install required packages.
-```bash
-pip install -r requirements.txt
 ```
 
 ### Run on my own computer.
@@ -33,10 +26,6 @@ pip install -r requirements.txt
 ```bat
 activate.bat
 ```
-- Install required packages.
-```bash
-pip install -r requirements.txt
-```
 
 ### I really want to run this on my own computer from start or the above methods do not work.
 > [!NOTE]
@@ -47,10 +36,6 @@ pip install -r requirements.txt
 - Run the following to activate virtual environment.
 ```bat
 activate.bat
-```
-- Install required packages.
-```bash
-pip install -r requirements.txt
 ```
 
 There is also deactivation script `deactivate.bat` to deactivate the virtual environment.

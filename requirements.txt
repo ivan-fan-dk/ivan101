@@ -1,6 +1,4 @@
 sphinx
+furo
 myst-parser
 linkify-it-py
-sphinx-book-theme
-sphinx-togglebutton
-myst-nb
