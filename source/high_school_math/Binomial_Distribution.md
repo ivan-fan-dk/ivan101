@@ -29,19 +29,8 @@ x \\
 $$
 
 Let's start by looking at this part: $P(X=x)$, this is probability speak for "the probability that X (in our example the amount of heads) is equal to some number, x". The answer to this question is the right side of the equation. The first part of this is the parenthesis:
-$
-\begin{pmatrix}
-n \\
-x \\
-\end{pmatrix}
-$
-This is the binomial distribution's analogue to us counting the ways we could get 2 heads in 3 coinflips. We will soon see that
-$
-\begin{pmatrix}
-3 \\
-2 \\
-\end{pmatrix} = 3
-$
+$\begin{pmatrix} n \\ x \\ \end{pmatrix}$
+This is the binomial distribution's analogue to us counting the ways we could get 2 heads in 3 coinflips. We will soon see that $\begin{pmatrix} 3 \\ 2 \\ \end{pmatrix} = 3$
 as this is the amount of coinflips with two heads out of three coinflips. The reason we have to include this term is soo that we account for all the ways our succeses could happen. 
 
 The next part, $p^x \cdot (1-p)^{n-x}$, is there to calculate the chance of exactly x succeses and n-x failures. It does this by cleverly using the fact that the chance for x succeses in a row followed by n-x failures in a row, is just as likely as any shuffling of n succeses and failures, in our case this means that:
@@ -66,21 +55,7 @@ $$P(X=2) =
 \cdot \frac{1}{2}^2 \cdot (1-\frac{1}{2})^{3-2} = 3 \cdot (\frac{1}{2})^3 = \frac{3}{8}$$
 
 As expected. Now it's your turn! Using the binomial distribution, find the probability of getting three heads in 3 throws. 
-You will most likely need the fact that 
-$
-\begin{pmatrix}
-3 \\
-3 \\
-\end{pmatrix} = 1
-$
-. If you're interested in how to calculate 
-$
-\begin{pmatrix}
-n \\
-x \\
-\end{pmatrix}
-$
-in general, look up "binomial coefficient". 
+You will most likely need the fact that $\begin{pmatrix} 3 \\ 3 \\ \end{pmatrix} = 1$. If you're interested in how to calculate $\begin{pmatrix} n \\ x \\ \end{pmatrix}$ in general, look up "binomial coefficient". 
 
 
 

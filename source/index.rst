@@ -21,6 +21,7 @@ Contents:
    
    intro
    elementary_math/index
+   high_school_math/index
 
 
 
