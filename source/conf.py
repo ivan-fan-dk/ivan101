@@ -7,7 +7,7 @@
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
 
 project = 'Math Notes'
-copyright = '2024, Ivan Fan'
+copyright = '2024, Erik Ross-Rønnow, Ivan Fan'
 author = 'Ivan Fan'
 release = '0.0.1'
 

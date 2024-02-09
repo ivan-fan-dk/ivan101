@@ -1,4 +1,4 @@
-# Substraction
+# Subtraction
 
 $$
 a - b
