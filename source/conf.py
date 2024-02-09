@@ -7,9 +7,9 @@
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
 
 project = 'Math Notes'
-copyright = '2024, Erik Ross-Rønnow, Ivan Fan'
-author = 'Ivan Fan'
-release = '0.0.1'
+copyright = '2024, All rights reserved'
+author = 'Erik Ross-Rønnow, Ivan Fan'
+release = '0.0.2'
 
 # -- General configuration ---------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
@@ -19,10 +19,14 @@ extensions = [
    'sphinx.ext.doctest',
    'sphinx.ext.autodoc',
    'sphinx.ext.autosummary',
-   'myst_parser',
+   "myst_nb",
+   'sphinx_togglebutton',
 ]
 
+html_static_path = ["_static"]
+html_css_files = ["custom.css"]
 templates_path = ['_templates']
+
 exclude_patterns = []
 
 
@@ -30,22 +34,38 @@ exclude_patterns = []
 # -- Options for HTML output -------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#options-for-html-output
 
-html_theme = 'furo'
+html_theme = 'sphinx_book_theme'
 html_static_path = ['_static']
 
 source_suffix = {
     '.rst': 'restructuredtext',
-    '.txt': 'markdown',
-    '.md': 'markdown',
+    '.txt': 'myst-nb',
+    '.md': 'myst-nb',
+    '.ipynb': 'myst-nb',
+    '.myst': 'myst-nb',
 }
 
-html_logo = "_static/logo.png"
-
-# html_theme_options = {
-#     "announcement": "<em>Important</em> announcement!",
-# }
+html_theme_options = {
+    "announcement": "<b>👏👏A warm welcome to Erik Ross-Rønnow!!!👏👏</b>",
+    "use_repository_button": True,
+    "repository_provider": "github",
+    "repository_url": "https://github.com/ivan-fan-dk/ivan101",
+    "use_fullscreen_button": True,
+    "use_download_button": True,
+    "home_page_in_toc": True,
+    "use_sidenotes": True,
+    "show_navbar_depth": 1,
+    "collapse_navbar": False,
+    # "use_edit_page_button": True,
+    # "header_links_before_dropdown": 4,
+    # "navbar_align": "content",
+    # "navbar_center": ["navbar-nav"],
+    # "icon_links": _icon_links,
+}
 
 html_title = "Math notes"
+
+html_logo = "_static/logo.png"
 
 html_favicon = "_static/favicon.png"
 
