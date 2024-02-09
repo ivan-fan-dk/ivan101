@@ -43,7 +43,9 @@ $$P(H,H,T) = P(T,H,H) = P(H,T,H)$$
 
 Now lets look the the case where we have $x=2$ succeses followed by $n-x=3-2=1$ failures: (H,H,T). The probability for this outcome can be found using the "and" rule. The probability for getting H and H and T is $P(H)P(H)P(T) = \frac{1}{2} \cdot \frac{1}{2} \cdot \frac{1}{2} = \frac{1}{2}^2 \cdot (1-\frac{1}{2})^{3-2} = (\frac{1}{2})^3$. Notice here, that we have used the fact that if we know the probability of succes, we also know the probability of failure, as the two are mutually exclusive: $P_{\text{succes}} + p_{\text{failure}} = 1 \implies p_{\text{failure}} = 1-p_{\text{succes}}$. In this case they are both $\frac{1}{2}$. 
 
-Now let's combine all the pieces and find the answer that we already know: $P(X=3)=\frac{3}{8}$:
+
+## Example Calculation:
+Now let's combine all the pieces and find the answer that we already know: $P(X=2)=\frac{3}{8}$:
 
 $$P(X=2) = 
 \begin{pmatrix}
@@ -53,6 +55,17 @@ $$P(X=2) =
 \cdot \frac{1}{2}^2 \cdot (1-\frac{1}{2})^{3-2} = 3 \cdot (\frac{1}{2})^3 = \frac{3}{8}$$
 
 As expected. Now it's your turn! Using the binomial distribution, find the probability of getting three heads in 3 throws. 
+You will most likely need the fact that 
+$\begin{pmatrix}
+3 \\
+3 \\
+\end{pmatrix} = 1$. If you're interested in how to calculate 
+$\begin{pmatrix}
+n \\
+x \\
+\end{pmatrix}$ in general, look up "binomial coefficient". 
+
+
 
 
 
