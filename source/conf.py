@@ -46,7 +46,7 @@ source_suffix = {
 }
 
 html_theme_options = {
-    "announcement": "<b>👏👏A warm welcome to Erik Ross-Rønnow!!!👏👏</b>",
+    # "announcement": "<b>👏👏A warm welcome to Erik Ross-Rønnow!!!👏👏</b>",
     "use_repository_button": True,
     "repository_provider": "github",
     "repository_url": "https://github.com/ivan-fan-dk/ivan101",

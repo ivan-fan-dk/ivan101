@@ -30,7 +30,7 @@
 
     <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=a746c00c" />
     <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css?v=384b581d" />
-    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css?v=be8a1c11" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
     <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css?v=13237357" />
     <link rel="stylesheet" type="text/css" href="../_static/custom.css" />
   
@@ -59,7 +59,7 @@
     <link rel="prev" title="Elementary Math" href="index.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
-    <meta name="docbuild:last-update" content="Feb 09, 2024"/>
+    <meta name="docbuild:last-update" content="Mar 09, 2024"/>
   </head>
   
   
@@ -109,12 +109,6 @@
   <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
 </form></div>
   </div>
-
-
-  <div class="bd-header-announcement container-fluid bd-header-announcement">
-    <div class="bd-header-announcement__content"><b>👏👏A warm welcome to Erik Ross-Rønnow!!!👏👏</b></div>
-  </div>
-
   
     <header class="bd-header navbar navbar-expand-lg bd-navbar">
     </header>
@@ -331,7 +325,9 @@ document.write(`
   </button>
 `);
 </script>
-
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
 </div></div>
       
     </div>
@@ -347,6 +343,19 @@ document.write(`
     <div id="print-main-content">
         <div id="jb-print-toc">
             
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#what-is-addition">What is addition?</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#calculation-strategy">Calculation Strategy</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#addition-of-whole-numbers">Addition of Whole Numbers</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#addition-of-decimal-numbers">Addition of Decimal Numbers</a></li>
+</ul>
+</li>
+</ul>
+            </nav>
         </div>
     </div>
 </div>
@@ -358,10 +367,180 @@ document.write(`
                   
   <section class="tex2jax_ignore mathjax_ignore" id="addition">
 <h1>Addition<a class="headerlink" href="#addition" title="Link to this heading">#</a></h1>
+<section id="what-is-addition">
+<h2>What is addition?<a class="headerlink" href="#what-is-addition" title="Link to this heading">#</a></h2>
+<aside class="margin sidebar">
+<p class="sidebar-title"></p>
+<p><img alt="Fingers" src="../_images/ten-fingers.jpg" /></p>
+</aside>
+<p>We use addition when we combine things and find out what the total is.</p>
+<div class="important admonition">
+<p class="admonition-title">Warm up</p>
+<p>If we want to count how many fingers there are in two hands, we can think in the following way:</p>
+<p>There are five fingers on the left hand, and there are five fingers on the right hand. So, in total, there are ten fingers.</p>
+<p>In mathematics, we can also write:
+<span class="math notranslate nohighlight">\(5+5=10\)</span></p>
+</div>
+</section>
+<section id="calculation-strategy">
+<h2>Calculation Strategy<a class="headerlink" href="#calculation-strategy" title="Link to this heading">#</a></h2>
+<p>There are some different tricks regarding how to add numbers together. If the reader can add two small numbers, then he/she can certainly add two large numbers. The idea is to <strong>add the digits pairwise from right to left</strong>.</p>
+<p>Let’s take an example. If you know that <span class="math notranslate nohighlight">\(3+4=7\)</span> and <span class="math notranslate nohighlight">\(1+5=6\)</span>, then it’s easy to calculate <span class="math notranslate nohighlight">\(31+45\)</span>.</p>
+<p>It becomes clear when we show the calculation in vertical format. So, let’s do that. Remember to write digits in the same position below each other like this:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{matrix} &amp; 3 &amp; 1 \\ + &amp; 4 &amp; 5 \\ \hline  \\ \end{matrix}
+\end{split}\]</div>
+<p>Now we can start calculating. We add digits from the right side.</p>
+<p>Since <span class="math notranslate nohighlight">\(1+5=6\)</span>, we write the digit <span class="math notranslate nohighlight">\(6\)</span> below the horizontal line in the same column where <span class="math notranslate nohighlight">\(1\)</span> and <span class="math notranslate nohighlight">\(5\)</span> are placed.</p>
+<p>Similarly, we write the digit <span class="math notranslate nohighlight">\(7\)</span> in the same column where <span class="math notranslate nohighlight">\(3\)</span> and <span class="math notranslate nohighlight">\(4\)</span> are placed, since <span class="math notranslate nohighlight">\(3+4=7\)</span>. Finally, we get,</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{matrix} &amp; 3 &amp; 1 \\ + &amp; 4 &amp; 5 \\ \hline &amp; 7 &amp; 6 \end{matrix}
+\end{split}\]</div>
+<p>Thus, we can read the answer directly: <span class="math notranslate nohighlight">\(31+45=76\)</span>. Is it clear?</p>
+<p>There are some small details to be mindful of, for example, <strong>what should we do if the sum of two digits exceeds <span class="math notranslate nohighlight">\(9\)</span>?</strong></p>
+<p>More generally, you can follow the following method.</p>
+<div class="tip admonition">
+<p class="admonition-title">General addition strategy</p>
+<ol class="arabic simple">
+<li><p>Set up the calculation vertically.</p></li>
+<li><p>Add the digits in each position starting from right to left.</p></li>
+<li><p>Whenever the sum of two digits exceeds 9, add 1 to the sum of the next two digits.</p></li>
+</ol>
+</div>
+<section id="addition-of-whole-numbers">
+<h3>Addition of Whole Numbers<a class="headerlink" href="#addition-of-whole-numbers" title="Link to this heading">#</a></h3>
+<div class="important toggle admonition">
+<p class="admonition-title">How to calculate <span class="math notranslate nohighlight">\(18+94\)</span> ?</p>
+<ol class="arabic simple">
+<li><p>Let’s first set up the calculation vertically, so it looks like this:</p></li>
+</ol>
+<p><strong>(Remember that digits in the same position should be stacked under each other, i.e., <span class="math notranslate nohighlight">\(8\)</span> should be placed above <span class="math notranslate nohighlight">\(4\)</span>, and <span class="math notranslate nohighlight">\(1\)</span> should be placed above <span class="math notranslate nohighlight">\(9\)</span>)</strong></p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{matrix}
+    &amp; 1 &amp; 8 \\
++ &amp; 9 &amp; 4 \\ 
+    \hline \\
+\end{matrix}
+\end{split}\]</div>
+<ol class="arabic simple" start="2">
+<li><p>We add the digits from right to left. First, we calculate</p></li>
+</ol>
+<div class="math notranslate nohighlight">
+\[8+4=12\]</div>
+<p>We write the digit <span class="math notranslate nohighlight">\(2\)</span> below the horizontal line and in the units place.</p>
+<p>Since the sum exceeds 9, we write a <span class="math notranslate nohighlight">\(1\)</span> above the top digit in the position to the left to remind us that it should be added to the tens place.</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{matrix}
+    &amp; _1 &amp; \\ 
+    &amp; 1 &amp; 8 \\
++ &amp; 9 &amp; 4 \\ 
+    \hline
+    &amp;   &amp; 2
+\end{matrix}
+\end{split}\]</div>
+<ol class="arabic simple" start="3">
+<li><p>We add the digits in the tens place.</p></li>
+</ol>
+<div class="math notranslate nohighlight">
+\[1+1+9 = 11\]</div>
+<p>We write a <span class="math notranslate nohighlight">\(1\)</span> below the horizontal line and in the tens place.</p>
+<p>Since the sum exceeds 9, we write a <span class="math notranslate nohighlight">\(1\)</span> above the top digit in the position to the left to remind us that it should be added to the hundreds place.</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{matrix}
+    &amp; _1 &amp; _1 &amp; \\ 
+    &amp; &amp; 1 &amp; 8 \\
++  &amp; &amp; 9 &amp; 4 \\ 
+    \hline
+    &amp;  &amp; 1  &amp; 2
+\end{matrix}
+\end{split}\]</div>
+<ol class="arabic simple" start="4">
+<li><p>We add the digits in the hundreds place. There’s only one digit, which is <span class="math notranslate nohighlight">\(1\)</span>. So, we write <span class="math notranslate nohighlight">\(1\)</span> below the horizontal line in the hundreds place.</p></li>
+</ol>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{matrix}
+    &amp; _1 &amp; _1 &amp; \\ 
+    &amp; &amp; 1 &amp; 8 \\
++  &amp; &amp; 9 &amp; 4 \\ 
+    \hline
+    &amp; 1 &amp; 1  &amp; 2
+\end{matrix}
+\end{split}\]</div>
+<p>Thus, the answer is <span class="math notranslate nohighlight">\(18+94=112\)</span>.</p>
+</div>
+</section>
+<section id="addition-of-decimal-numbers">
+<h3>Addition of Decimal Numbers<a class="headerlink" href="#addition-of-decimal-numbers" title="Link to this heading">#</a></h3>
+<p>Adding decimal numbers is somewhat similar to adding whole numbers.</p>
+<div class="important toggle admonition">
+<p class="admonition-title">How to calculate <span class="math notranslate nohighlight">\(4.7+9.57\)</span> ?</p>
+<ol class="arabic simple">
+<li><p>Set up the calculation vertically.</p></li>
+</ol>
+<p><strong>(Remember that the decimal points should be aligned in the same column, and digits in the same position should be stacked under each other.)</strong></p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{matrix} &amp; 4 &amp; . &amp; 7 \\ + &amp; 9 &amp; . &amp; 5 &amp; 7 \\ \hline \\ \end{matrix}
+\end{split}\]</div>
+<ol class="arabic simple" start="2">
+<li><p>We calculate from right to left. There’s only the digit <span class="math notranslate nohighlight">\(7\)</span> in the hundredths place. So, the digit is moved down.</p></li>
+</ol>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{matrix} &amp; 4 &amp; . &amp; 7 \\ + &amp; 9 &amp; . &amp; 5 &amp; 7 \\ \hline &amp;   &amp;   &amp;   &amp;  7\end{matrix}
+\end{split}\]</div>
+<ol class="arabic simple" start="3">
+<li><p>We add the digits in the tenths place. Since <span class="math notranslate nohighlight">\(7+5=12\)</span>, we write <span class="math notranslate nohighlight">\(2\)</span> below the horizontal line, and add a <span class="math notranslate nohighlight">\(1\)</span> above the top digit in the position to the left.</p></li>
+</ol>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{matrix} &amp; _1 &amp;  &amp; \\ &amp; 4 &amp; . &amp; 7 \\ + &amp; 9 &amp; . &amp; 5 &amp; 7 \\ \hline &amp;   &amp;   &amp;  2 &amp;  7\end{matrix}
+\end{split}\]</div>
+<ol class="arabic simple" start="4">
+<li><p>We add the digits in the units place. Since <span class="math notranslate nohighlight">\(1+4+9=14\)</span>, we write <span class="math notranslate nohighlight">\(4\)</span> below the horizontal line and add a <span class="math notranslate nohighlight">\(1\)</span> above the top digit in the position to the left.</p></li>
+</ol>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{matrix} &amp; _1 &amp; _1 &amp;  &amp; \\ &amp;  &amp; 4 &amp; . &amp; 7 \\ + &amp;  &amp; 9 &amp; . &amp; 5 &amp; 7 \\ \hline &amp;  &amp; 4 &amp; . &amp;  2 &amp;  7\end{matrix}
+\end{split}\]</div>
+<ol class="arabic simple" start="5">
+<li><p>There’s only a digit in the tens place, so it’s moved down.</p></li>
+</ol>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{matrix} &amp; _1 &amp; _1 &amp;  &amp; \\ &amp;  &amp; 4 &amp; . &amp; 7 \\ + &amp;  &amp; 9 &amp; . &amp; 5 &amp; 7 \\ \hline &amp;  1 &amp; 4 &amp; . &amp;  2 &amp;  7\end{matrix}
+\end{split}\]</div>
+<p>The answer is <span class="math notranslate nohighlight">\(4.7+9.57=14.27\)</span>.</p>
+</div>
+<div class="note admonition">
+<p class="admonition-title">Zeroes in Decimal Numbers</p>
+<p>If the decimals (digits after the decimal point) end with <span class="math notranslate nohighlight">\(0\)</span>, they can be omitted as they do not change our number.</p>
 <div class="math notranslate nohighlight">
 \[
-a + b
+1.2300=1.23
 \]</div>
+<div class="math notranslate nohighlight">
+\[
+4.970000=4.97
+\]</div>
+<p>But if the <span class="math notranslate nohighlight">\(0\)</span> is in the middle, they cannot be omitted as the number changes.</p>
+<div class="math notranslate nohighlight">
+\[
+1.2003 \neq 1.23
+\]</div>
+<div class="math notranslate nohighlight">
+\[
+40.0097 \neq 4.97
+\]</div>
+</div>
+</section>
+</section>
 </section>
 
 
@@ -400,7 +579,25 @@ a + b
             
             
               
-                <div class="bd-sidebar-secondary bd-toc"></div>
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#what-is-addition">What is addition?</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#calculation-strategy">Calculation Strategy</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#addition-of-whole-numbers">Addition of Whole Numbers</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#addition-of-decimal-numbers">Addition of Decimal Numbers</a></li>
+</ul>
+</li>
+</ul>
+  </nav></div>
+
+</div></div>
               
             
           </div>
@@ -430,7 +627,7 @@ By Erik Ross-Rønnow, Ivan Fan
   
   <div class="footer-item">
     <p class="last-updated">
-  Last updated on Feb 09, 2024.
+  Last updated on Mar 09, 2024.
   <br/>
 </p>
   </div>

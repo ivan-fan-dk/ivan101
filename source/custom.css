@@ -1,0 +1,10 @@
+div.example {
+    border-left-color: black;
+}
+div.example .admonition-title {
+    background-color: black;
+}
+div.example .admonition-title:before {
+    color:  black;
+    content: '\f19d';
+}

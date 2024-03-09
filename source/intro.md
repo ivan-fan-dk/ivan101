@@ -5,6 +5,7 @@ This is a **open-source** collection of math notes for primary and secondary sch
 
 ## Who are we?
 Ivan: I am Ivan. I am a university student who majors in math. I have a passion for math and I want to share it with you.
+
 Erik: I study at DTU and love pure math, it tickles my brain. 
 
 ## Why are we doing this?
